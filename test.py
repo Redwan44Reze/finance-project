@@ -1,7 +1,7 @@
 import requests
 import sqlite3
 
-URL = "https://data.ofgl.fr/api/explore/v2.1/catalog/datasets/ofgl-base-communes/records?where=com_name%20%3D%20%27Rez%C3%A9%27%20and%20exer%3D%20date%272023%27"
+URL = "https://data.ofgl.fr/api/explore/v2.1/catalog/datasets/ofgl-base-communes/records?where=dep_name%20%3D%20'Loire-Atlantique'"
 
 def fetch_data():
     response = requests.get(URL + "&limit=100&offset=0")
@@ -55,6 +55,7 @@ def main():
         return
 
     conn = sqlite3.connect("ofgl_communes.db")
+    print(records[0])
     create_table(conn, records[0])
     insert_records(conn, records)
     conn.close()
