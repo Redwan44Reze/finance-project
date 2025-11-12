@@ -17,3 +17,5 @@ Ce projet a pour but d'explorer, visualiser et modéliser les données financiè
 ## Dossier `data/raw`
 Contient les fichiers téléchargés depuis Data.gouv.fr :
 - comptes_communes_2017.csv à comptes_communes_2023.csv
+
+
