@@ -18,4 +18,10 @@ Ce projet a pour but d'explorer, visualiser et modéliser les données financiè
 Contient les fichiers téléchargés depuis Data.gouv.fr :
 - comptes_communes_2017.csv à comptes_communes_2023.csv
 
+load_data.py : charger les données bruts
 
+clean_data.py : renommer, convertir, supprimer les colonnes inutiles
+
+merge_data.py : fusionner toutes les années dans un seul DataFrame
+
+to_sqlite.py : sauvegarder dans une base SQLite locale
